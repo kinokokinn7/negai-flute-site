@@ -1,0 +1,8 @@
+---
+import { sitePath } from '../lib/paths.js';
+const { character, index = 0 } = Astro.props;
+---
+<article class="character-card" id={character.slug} style={`--character-color:${character.color}`}>
+<div class="character-art">{character.image ? <img src={sitePath(import.meta.env.BASE_URL, character.image)} alt={character.name} width="500" height="500" loading="lazy"/> : <><span class="portrait-number">CHARACTER / 0{index + 1}</span><div class="portrait-symbol" aria-hidden="true">{character.mark}</div><span class="portrait-note">キャラクターイラスト準備中</span></>}</div>
+<div class="character-info"><span class="eyebrow">{character.label}</span><h3>{character.name}</h3><p>{character.description}</p></div>
+</article>

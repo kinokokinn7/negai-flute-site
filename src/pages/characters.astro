@@ -1,0 +1,6 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CharacterCard from '../components/CharacterCard.astro';
+import { characters } from '../data/site.js';
+---
+<Layout title="登場人物"><section class="wrap page-heading"><p class="eyebrow">CHARACTERS</p><h1>ひとりひとりに、物語がある。</h1><p>月夜の丘からはじまる出会い。<br/>物語の序盤に登場する、四人をご紹介します。</p></section><section class="wrap character-page" aria-label="主な登場人物"><div class="character-grid">{characters.map((character,index) => <CharacterCard character={character} index={index}/>)}</div><p class="gentle-note">紹介は物語の序盤の内容にとどめています。</p></section></Layout>

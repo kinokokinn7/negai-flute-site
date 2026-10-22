@@ -1,0 +1,5 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { sitePath } from '../lib/paths.js';
+---
+<Layout title="ページが見つかりません"><section class="wrap page-heading not-found"><p class="eyebrow">404 / A LITTLE DETOUR</p><h1>道に迷ってしまったようです。</h1><p>お探しのページは見つかりませんでした。</p><a class="button" href={sitePath(import.meta.env.BASE_URL)}>物語の入口へ戻る <span aria-hidden="true">→</span></a></section></Layout>

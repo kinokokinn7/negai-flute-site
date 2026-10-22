@@ -1,0 +1,26 @@
+---
+import { sitePath } from '../lib/paths.js';
+const { compact = false } = Astro.props;
+---
+<div class:list={['scenery', { compact }]} role="img" aria-label="物語への入口をイメージした、月と森とフルートの装飾画">
+  <svg viewBox="0 0 600 740" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#163e3d"/><stop offset=".7" stop-color="#4d7770"/><stop offset="1" stop-color="#9da88a"/></linearGradient>
+      <radialGradient id="glow"><stop stop-color="#f7e5b9" stop-opacity=".6"/><stop offset="1" stop-color="#f7e5b9" stop-opacity="0"/></radialGradient>
+      <linearGradient id="river" x2="1" y2="1"><stop stop-color="#b8c1a0"/><stop offset="1" stop-color="#597e72"/></linearGradient>
+      <pattern id="stars" width="87" height="97" patternUnits="userSpaceOnUse"><circle cx="25" cy="18" r="1" fill="#f3dfb1" opacity=".7"/><circle cx="65" cy="63" r="1.5" fill="#f3dfb1" opacity=".5"/></pattern>
+    </defs>
+    <path d="M0 740V300a300 300 0 0 1 600 0v440Z" fill="url(#sky)"/>
+    <path d="M0 740V300a300 300 0 0 1 600 0v440Z" fill="url(#stars)"/>
+    <circle cx="355" cy="202" r="145" fill="url(#glow)"/><circle cx="355" cy="202" r="55" fill="#f0dfb5"/>
+    <path d="m0 443 110-114 93 102 110-87 100 114 97-79 90 82v279H0Z" fill="#406962"/>
+    <path d="m0 486 100-58 104 78 118-76 91 91 125-82 62 45v256H0Z" fill="#2a574f"/>
+    <path d="M335 470c-70 72 80 103-10 148S215 692 270 740h130c-95-68 53-80 38-139s-139-56-103-131" fill="url(#river)"/>
+    <g fill="#163f38"><path d="m25 231-74 221h42l-68 139H70L25 441h38Z"/><path d="m95 310-66 187h37l-58 128h165l-52-125h35Z"/><path d="m556 251-72 207h39l-64 141h184l-61-139h40Z"/><path d="m491 365-53 159h30l-47 115h147l-50-115h32Z"/></g>
+    <path d="M0 643q100-45 225 43t375-28v82H0" fill="#10382f"/>
+    <image href={sitePath(import.meta.env.BASE_URL, 'images/negai-flute.png')} x="0" y="-37" width="230" height="77" preserveAspectRatio="xMidYMid meet" transform="translate(275 420) rotate(55)"/>
+    <g fill="#ead5a2"><circle cx="200" cy="390" r="3"/><circle cx="415" cy="360" r="3"/><circle cx="457" cy="270" r="2"/><circle cx="164" cy="281" r="2"/><path d="m242 171 3 9 9 3-9 3-3 9-3-9-9-3 9-3Z"/></g>
+    <path d="M15 725V300a285 285 0 0 1 570 0v425Z" fill="none" stroke="#d3c291" stroke-opacity=".45"/>
+  </svg>
+  <span class="art-caption">A TALE BEGINS WITH A WISH</span>
+</div>

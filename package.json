@@ -1,0 +1,1 @@
+{"name":"negai-no-flute","version":"1.0.0","private":true,"type":"module","engines":{"node":">=22.23.4"},"scripts":{"dev":"astro dev","build":"astro build","preview":"astro preview","check":"tsc -p jsconfig.json --noEmit","test":"node --test scripts/*.test.mjs"},"dependencies":{"astro":"7.4.2"},"devDependencies":{"typescript":"7.0.2"}}

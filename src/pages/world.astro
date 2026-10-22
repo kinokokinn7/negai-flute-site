@@ -1,0 +1,6 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Scenery from '../components/Scenery.astro';
+import { worlds } from '../data/site.js';
+---
+<Layout title="世界観"><section class="wrap page-heading"><p class="eyebrow">WORLD</p><h1>物語が息づく世界。</h1><p>吟遊詩人たちの島から、月の向こうへ。<br/>ニーマロが出会う風景を、少しだけ。</p></section><section class="wrap world-page"><Scenery compact/><div class="world-chapters">{worlds.map(world => <article><span class="eyebrow">CHAPTER {world.number}</span><h2>{world.title}</h2><p>{world.description}</p></article>)}<p class="gentle-note">結末や重要な秘密には触れずにご紹介しています。</p></div></section></Layout>
