@@ -5,7 +5,7 @@ export const site = {
   subtitle: '月の向こうに、憧れた世界が待っていた。',
   description: 'フルートが大好きな少女ニーマロ。月夜の丘で出会った妖精に導かれ、憧れの世界へ。創作ファンタジー「ねがいのフルート」の世界観・登場人物・物語をご紹介します。',
   // Add actual publication URLs when ready. Empty URLs are not rendered as links.
-  readUrl: '',
+  readUrl: 'https://www.amazon.co.jp/dp/B0HP77GBT4',
   authorName: '',
 };
 /** @type {Character[]} */
