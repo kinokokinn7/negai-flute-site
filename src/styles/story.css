@@ -1,0 +1,14 @@
+.story-page .story-ornament {
+  min-height: 0;
+  background: transparent;
+  border: 0;
+  font-size: inherit;
+}
+
+.story-page .story-ornament img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 640px;
+  object-fit: contain;
+}
