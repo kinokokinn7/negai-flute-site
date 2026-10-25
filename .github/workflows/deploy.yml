@@ -1,6 +1,7 @@
 name: Deploy to GitHub Pages
-# Keep deployment manual while the repository is private and under review.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
